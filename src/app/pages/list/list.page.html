@@ -1,0 +1,13 @@
+<app-header [title]="'list-sliding'" [color]="'primary'"></app-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let d of data;let i = index">
+            <ion-label>
+                <h3>{{d.first_name}}</h3>
+                <p>{{d.email}}</p>
+            </ion-label>
+            <ion-label slot="end" class="ion-text-end small">{{i + 1000}}</ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

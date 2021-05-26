@@ -1,0 +1,50 @@
+<app-header [title]="'grid'" [color]="'primary'"></app-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>only text</ion-card-subtitle>
+            <ion-card-title>Awesome</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-img [src]="'https://st4.depositphotos.com/2480945/i/600/depositphotos_267516094-stock-photo-mountainscape-grindelwald-switzerland-pretty-swiss.jpg'"></ion-img>
+        </ion-card-content>
+    </ion-card>
+    <ion-row>
+        <ion-col class="bor">6</ion-col>
+        <ion-col class="bor">6</ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col size="12" size-lg="3" size-md="4" size-sm="6" *ngFor="let d of [1,1,1,1,1,1,1,1,1,1,1,1]">
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-subtitle>only text</ion-card-subtitle>
+                    <ion-card-title>Awesome</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-img [src]="'https://st4.depositphotos.com/2480945/i/600/depositphotos_267516094-stock-photo-mountainscape-grindelwald-switzerland-pretty-swiss.jpg'"></ion-img>
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="bor" size="6">
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-subtitle>only text</ion-card-subtitle>
+                    <ion-card-title>Awesome</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-img [src]="'https://st4.depositphotos.com/2480945/i/600/depositphotos_267516094-stock-photo-mountainscape-grindelwald-switzerland-pretty-swiss.jpg'"></ion-img>
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+        <ion-col class="bor"></ion-col>
+        <ion-col class="bor"></ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="bor" size="4">4</ion-col>
+        <ion-col class="bor">...6</ion-col>
+        <ion-col class="bor" size="2">2</ion-col>
+    </ion-row>
+</ion-content>

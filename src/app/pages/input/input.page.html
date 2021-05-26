@@ -1,0 +1,24 @@
+<app-header [title]="'input'" [color]="'primary'"></app-header>
+
+<ion-content>
+    <ion-list-header>
+        <ion-label>Status Form: {{form.valid}} </ion-label>
+    </ion-list-header>
+    <form [formGroup]="form">
+        <ion-item>
+            <ion-label position="floating">Username</ion-label>
+            <ion-input formControlName="username" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input formControlName="email" type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <ion-button [disabled]="form.invalid" (click)="send()" color="success" expand="block">
+            Save
+        </ion-button>
+    </form>
+</ion-content>

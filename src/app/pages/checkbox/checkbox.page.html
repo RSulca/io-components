@@ -1,0 +1,13 @@
+<app-header [title]="'checkbox'" [color]="'primary'"></app-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item (click)="showData(d)" *ngFor="let d of data">
+            <ion-checkbox [slot]="'start'" [color]="d.name" [(ngModel)]="d.state"></ion-checkbox>
+            <ion-label>{{d.name}}</ion-label>
+        </ion-item>
+    </ion-list>
+    <ion-button (click)="onClick()" expand="block">
+        Show all data
+    </ion-button>
+</ion-content>

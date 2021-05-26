@@ -2,10 +2,13 @@
 </app-header>
 
 <ion-content>
-    <ion-button [routerLink]="['/home']" class="ion-padding">
-        Home
+    <ion-button (click)="presentAlert()" expand='block' class="ion-padding">
+        Show Alert
     </ion-button>
-    <ion-button [routerLink]="['/action-sheet']" class="ion-padding">
-        Action-Sheet
+    <ion-button (click)="presentAlertMultipleButtons()" expand='block' class="ion-padding">
+        Show Multiple Alert
+    </ion-button>
+    <ion-button (click)="presentAlertPrompt()" expand='block' class="ion-padding">
+        Show Prompt Alert
     </ion-button>
 </ion-content>
