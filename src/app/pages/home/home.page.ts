@@ -86,6 +86,16 @@ export class HomePage implements OnInit {
         name: 'list-sliding',
         redirecTo: '/list'
       },
+      {
+        icon: 'reorder-three-outline',
+        name: 'list-reorder',
+        redirecTo: '/list-reorder'
+      },
+      {
+        icon: 'refresh-circle-outline',
+        name: 'loading',
+        redirecTo: '/loading'
+      },
     ]
     // constructor(private _data: DataService) {
     //   this.data = data;

@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="regresar" color='primary' defaultHref='/'></ion-back-button>
+        </ion-buttons>
+        <ion-title color='primary'>List-Reorder</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="toggle=!toggle">
+                Toggle
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-reorder-group (ionItemReorder)="doReorder($event)" [disabled]="toggle">
+            <ion-item *ngFor="let h of heros">
+                <ion-label>{{h}}</ion-label>
+                <ion-reorder slot="end">
+                    <ion-icon name="repeat"></ion-icon>
+                </ion-reorder>
+            </ion-item>
+        </ion-reorder-group>
+    </ion-list>
+</ion-content>

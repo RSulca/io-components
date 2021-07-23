@@ -44,7 +44,8 @@ export class AlertPage implements OnInit {
       buttons: [
         {
           text: 'Good',
-          handler: () => console.log('Pressed Good')
+          handler: () => console.log('Pressed Good'),
+          cssClass: 'kil'
         },
         {
           text: 'Cancel',

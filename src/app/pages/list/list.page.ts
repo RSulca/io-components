@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataFake } from '../home/home.page';
 import { DataService } from '../../services/data.service';
+import { IonList } from '@ionic/angular';
 
 @Component({
   selector: 'app-list',
@@ -10,6 +11,7 @@ import { DataService } from '../../services/data.service';
 export class ListPage implements OnInit {
 
   data: DataFake[];
+  @ViewChild(IonList) ionList: IonList;
 
   constructor(private _data: DataService) {
     this._data.getData().subscribe(data => {
@@ -20,4 +22,23 @@ export class ListPage implements OnInit {
   ngOnInit() {
   }
 
+  favorite(item: any) {
+    console.log(item);
+    this.ionList.closeSlidingItems();
+  }
+
+  favorite2(item: any) {
+    console.log(item);
+    this.ionList.closeSlidingItems();
+  }
+
+  share(item: any) {
+    console.log(item);
+    this.ionList.closeSlidingItems();
+  }
+
+  share2(item: any) {
+    console.log(item);
+    this.ionList.closeSlidingItems();
+  }
 }
