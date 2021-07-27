@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { delay, map } from 'rxjs/operators';
+import { Data } from '../interfaces/interface';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,10 @@ export class DataService {
       }),
       delay(1000)
     )
+  }
+
+  getDataOpciones() {
+    return this.http.get<Data[]>('../assets/data/opciones.json');
   }
 
 
