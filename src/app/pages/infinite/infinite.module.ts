@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { InfinitePageRoutingModule } from './infinite-routing.module';
 
 import { InfinitePage } from './infinite.page';
-import { ComponentsModule } from '../../shared/components/components.module';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [

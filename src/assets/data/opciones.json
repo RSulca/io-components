@@ -72,5 +72,20 @@
         "icon": "laptop-outline",
         "name": "modal",
         "redirecTo": "/modal"
+    },
+    {
+        "icon": "chatbox-outline",
+        "name": "popover",
+        "redirecTo": "/popover"
+    },
+    {
+        "icon": "code-working-outline",
+        "name": "progress bar",
+        "redirecTo": "/progress"
+    },
+    {
+        "icon": "arrow-down-circle-outline",
+        "name": "refresher",
+        "redirecTo": "/refresher"
     }
 ]

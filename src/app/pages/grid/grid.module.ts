@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { GridPageRoutingModule } from './grid-routing.module';
 
 import { GridPage } from './grid.page';
-import { ComponentsModule } from '../../shared/components/components.module';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [

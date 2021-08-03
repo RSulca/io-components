@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CardPageRoutingModule } from './card-routing.module';
+import { RefresherPageRoutingModule } from './refresher-routing.module';
 
-import { CardPage } from './card.page';
+import { RefresherPage } from './refresher.page';
 import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    CardPageRoutingModule,
+    RefresherPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [CardPage]
+  declarations: [RefresherPage]
 })
-export class CardPageModule {}
+export class RefresherPageModule {}
