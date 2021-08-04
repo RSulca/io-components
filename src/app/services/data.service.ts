@@ -24,9 +24,18 @@ export class DataService {
     )
   }
 
+  getAlbumes() {
+    return this.http.get<any[]>(`https://jsonplaceholder.typicode.com/albums`)
+  }
+
   getDataOpciones() {
     return this.http.get<Data[]>('../assets/data/opciones.json');
   }
 
+  getSuperheroes() {
+    return this.http.get<any[]>('../assets/data/superheroes.json').pipe(
+      delay(1500)
+    );
+  }
 
 }
